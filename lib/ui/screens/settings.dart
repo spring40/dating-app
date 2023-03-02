@@ -36,16 +36,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
       key: _scaffoldKey,
       appBar: AppBar(
         title: const Text("Einstellungen"),
-        actions: [
-          IconButton(
-            onPressed: () {
-              Navigator.of(context).pushNamed(SettingsScreen.routeName);
-            },
-            icon: const Icon(
-              Icons.settings,
-            ),
-          ),
-        ],
       ),
       body: ListView(
         children: [

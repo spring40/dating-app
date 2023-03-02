@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Future<void> _loadData() async {
     // Setze den Wert _loadingData, zum überprüfen, ob gerade Daten geladen werden auf "true".
     setState(() {
-      _loadingData = false;
+      _loadingData = true;
     });
 
     // Hier wird einfach 1 Sekunde gewartet.
@@ -53,14 +53,14 @@ class _SplashScreenState extends State<SplashScreen> {
       color: Colors.white,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          FlutterLogo(
+        children: [
+          const FlutterLogo(
             size: 100,
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
-          CircularProgressIndicator(),
+          _loadingData ? const CircularProgressIndicator() : const SizedBox(),
         ],
       ),
     );
