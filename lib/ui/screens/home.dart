@@ -1,7 +1,7 @@
 import 'package:basic_app/ui/screens/settings.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatefulWidget {}
   // Der Routenname wird zur navigation zwischen den Screens (Bildschirmansichten) verwendet.
   static const String routeName = "/home";
 
